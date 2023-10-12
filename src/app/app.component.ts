@@ -9,5 +9,6 @@ import { CommonModule } from '@angular/common';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'angular-introduction';
+  name: string = "Jordan";   // name = "Jordan" (same declaration)
+  lastName = "Papaditsas";
 }
