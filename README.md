@@ -11,3 +11,7 @@
 - Input | undefined
 - *ngIf for displaying under a statement in template
 - ng-container & ng-template
+
+## 2. *ngFor Directive
+
+- 

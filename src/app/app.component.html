@@ -10,3 +10,7 @@
 <app-person-alt></app-person-alt>
 
 <app-person-alt [person]="person2"></app-person-alt>
+
+<p>Details of more users:</p>
+
+<app-person-alt *ngFor="let user of users" [person]="user"></app-person-alt>
