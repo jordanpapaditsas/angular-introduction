@@ -15,3 +15,9 @@
 ## 2. *ngFor Directive
 
 - 
+
+## 5. Event Binding (template -> controller)
+
+- Click handlers
+- Input handler
+- Two way binding
