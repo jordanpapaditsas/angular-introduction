@@ -21,4 +21,12 @@ export class AppComponent {
     email: 'jordPap@aueb.gr',
     address: 'Arg. 89'
   };
+
+  person2: Person = {
+    givenName: 'Panos',
+    surName: 'Dimos',
+    age: 32,
+    email: 'padimos@aueb.gr',
+    address: 'Naup.32'
+  }
 }
