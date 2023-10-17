@@ -3,5 +3,6 @@ export interface Person {
   surName: string;
   age: number;
   email: string;
-  address: string
+  address: string;
+  photoURL?: string;
 }

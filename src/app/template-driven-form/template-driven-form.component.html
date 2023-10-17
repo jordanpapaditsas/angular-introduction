@@ -1,0 +1,48 @@
+<form #form="ngForm" (ngSubmit)="onSubmit(form)" class="d-flex flex-column gap-2">
+  <h4>Template Driven Form</h4>
+  <div>
+    <label for="givenName" class="form-label">Given Name</label>
+    <input type="text" name="givenName" class="form-control" ngModel required #givenName="ngModel">
+    <div class="text-danger" *ngIf="givenName.invalid && givenName.touched">
+      Given Name is required!
+    </div>
+  </div>
+  <div>
+    <label for="surName" class="form-label">Surname</label>
+    <input type="text" name="surName" class="form-control" ngModel required #surName="ngModel">
+    <div class="text-danger" *ngIf="surName.invalid && surName.touched">
+      Surname is required!
+    </div>
+  </div>
+  <div>
+    <label for="age" class="form-label">Age</label>
+    <input type="number" name="age" class="form-control" ngModel required #age="ngModel">
+    <div class="text-danger" *ngIf="age.invalid && age.touched">
+      Age is required!
+    </div>
+  </div>
+  <div>
+    <label for="email" class="form-label">Email</label>
+    <input type="email" name="email" class="form-control" ngModel required email #email="ngModel">
+    <div class="text-danger" *ngIf="email.invalid && email.touched">
+      Email is missing or is invalid!
+    </div>
+  </div>
+  <div>
+    <label for="address" class="form-label">Address</label>
+    <input type="text" name="address" class="form-control" ngModel required #address="ngModel">
+    <div class="text-danger" *ngIf="address.invalid && address.touched">
+      Address is required!
+    </div>
+  </div>
+  <div>
+    <label for="photoURL" class="form-label">PhotoURL</label>
+    <input type="text" name="photoURL" class="form-control" ngModel>
+  </div>
+  <div>
+    <button type="submit" class="btn btn-primary" [disabled]="!form.valid">
+      Submit
+    </button>
+  </div>
+</form>
+
