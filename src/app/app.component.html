@@ -25,8 +25,20 @@
 
 <app-person-card [person]="sentUser"></app-person-card> -->
 
-<div class="container d-flex flex-column gap-2">
+<!-- <div class="container d-flex flex-column gap-2">
   <app-template-driven-form (person)="onNewPerson($event)"></app-template-driven-form>
+  
+  <app-output-demo 
+  [userData]="users" 
+  (deleteUser)="onDeleteUser($event)"
+  (sendUser)="onSendUser($event)"
+  ></app-output-demo>
+
+  <app-person-card [person]="sentUser"></app-person-card>
+</div> -->
+
+<div class="container d-flex flex-column gap-2">
+  <app-reactive-form (person)="onNewPerson($event)"></app-reactive-form>
   
   <app-output-demo 
   [userData]="users" 

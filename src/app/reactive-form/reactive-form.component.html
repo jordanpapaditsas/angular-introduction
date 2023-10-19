@@ -1,1 +1,62 @@
-<p>reactive-form works!</p>
+<form [formGroup]="form" class="d-flex flex-column gap-2">
+  <h4>Reactive Form</h4>
+  <!-- Given name -->
+  <div class="form-group">
+    <label for="givenName" class="form-label">Given Name:</label>
+    <input type="text" name="givenName" class="form-control" formControlName="givenName">
+    <div class="text-danger"
+      *ngIf="form.get('givenName')?.invalid && form.get('givenName')?.touched"
+      >
+      Given Name is required
+    </div>
+  </div>
+  <!-- Surname -->
+  <div class="form-group">
+    <label for="surName" class="form-label">Surname:</label>
+    <input type="text" name="surName" class="form-control" formControlName="surName">
+    <div class="text-danger"
+      *ngIf="form.get('surName')?.invalid && form.get('surName')?.touched"
+      >
+      Surname is required
+    </div>
+  </div>
+  <!-- Age -->
+  <div class="form-group">
+    <label for="age" class="form-label">Age:</label>
+    <input type="number" name="age" class="form-control" formControlName="age">
+    <div class="text-danger"
+      *ngIf="form.get('age')?.invalid && form.get('age')?.touched"
+      >
+      Age is missing or invalid
+    </div>
+  </div>
+  <!-- Email -->
+  <div class="form-group">
+    <label for="email" class="form-label">Email:</label>
+    <input type="email" name="email" class="form-control" formControlName="email">
+    <div class="text-danger"
+      *ngIf="form.get('email')?.invalid && form.get('email')?.touched"
+      >
+      Email is required
+    </div>
+  </div>
+  <!-- Address -->
+  <div class="form-group">
+    <label for="address" class="form-label">Address:</label>
+    <input type="text" name="address" class="form-control" formControlName="address">
+    <div class="text-danger"
+      *ngIf="form.get('address')?.invalid && form.get('address')?.touched"
+      >
+      Address is required
+    </div>
+  </div>
+  <!-- PhotoURL -->
+  <div class="form-group">
+    <label for="photoURL" class="form-label">PhotoURL:</label>
+    <input type="text" name="photoURL" class="form-control" formControlName="photoURL">
+  </div>
+  <!-- Submit -->
+  <div class="form-group">
+    <button (click)="onSubmit()" [disabled]="!form.valid" class="btn btn-primary">Submit</button>
+  </div>
+</form>
