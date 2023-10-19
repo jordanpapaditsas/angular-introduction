@@ -1,0 +1,121 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "givenName": "John",
+      "surName": "Doe",
+      "age": 30,
+      "email": "john.doe@example.com",
+      "address": "123 Main St",
+      "photoURL": "https://i.pravatar.cc/?img=1"
+    },
+    {
+      "id": 2,
+      "givenName": "Jane",
+      "surName": "Doe",
+      "age": 28,
+      "email": "jane.doe@example.com",
+      "address": "123 Main St",
+      "photoURL": "https://i.pravatar.cc/?img=2"
+    },
+    {
+      "id": 3,
+      "givenName": "Jim",
+      "surName": "Brown",
+      "age": 45,
+      "email": "jim.brown@example.com",
+      "address": "456 Park Ave",
+      "photoURL": "https://i.pravatar.cc/?img=3"
+    },
+    {
+      "id": 4,
+      "givenName": "Jill",
+      "surName": "Brown",
+      "age": 42,
+      "email": "jill.brown@example.com",
+      "address": "456 Park Ave",
+      "photoURL": "https://i.pravatar.cc/?img=4"
+    },
+    {
+      "id": 5,
+      "givenName": "Jake",
+      "surName": "Smith",
+      "age": 36,
+      "email": "jake.smith@example.com",
+      "address": "789 Broadway",
+      "photoURL": "https://i.pravatar.cc/?img=5"
+    },
+    {
+      "id": 6,
+      "givenName": "Judy",
+      "surName": "Smith",
+      "age": 34,
+      "email": "judy.smith@example.com",
+      "address": "789 Broadway",
+      "photoURL": "https://i.pravatar.cc/?img=6"
+    },
+    {
+      "id": 7,
+      "givenName": "Jack",
+      "surName": "Johnson",
+      "age": 50,
+      "email": "jack.johnson@example.com",
+      "address": "321 Oak St",
+      "photoURL": "https://i.pravatar.cc/?img=7"
+    },
+    {
+      "id": 8,
+      "givenName": "Julie",
+      "surName": "Johnson",
+      "age": 48,
+      "email": "julie.johnson@example.com",
+      "address": "321 Oak St",
+      "photoURL": "https://i.pravatar.cc/?img=8"
+    },
+    {
+      "id": 9,
+      "givenName": "Jerry",
+      "surName": "Davis",
+      "age": 55,
+      "email": "jerry.davis@example.com",
+      "address": "654 Pine St",
+      "photoURL": "https://i.pravatar.cc/?img=9"
+    },
+    {
+      "id": 10,
+      "givenName": "June",
+      "surName": "Davis",
+      "age": 53,
+      "email": "june.davis@example.com",
+      "address": "654 Pine St",
+      "photoURL": "https://i.pravatar.cc/?img=10"
+    },
+    {
+      "givenName": "Christodoulos",
+      "surName": "Fragkoudakis",
+      "age": 55,
+      "email": "chfrag@aueb.gr",
+      "address": "Athens, Greece",
+      "photoURL": "https://i.pravatar.cc/?img=22",
+      "id": 11
+    },
+    {
+      "givenName": "George",
+      "surName": "Fragkoudakis",
+      "age": 19,
+      "email": "george@ecample.com",
+      "address": "Palini, Greece",
+      "photoURL": "https://i.pravatar.cc/?img=34",
+      "id": 12
+    },
+    {
+      "givenName": "Peter",
+      "surName": "Jackson",
+      "age": 56,
+      "email": "peter@wxample.com",
+      "address": "New Zeland",
+      "photoURL": "https://i.pravatar.cc/?img=44",
+      "id": 13
+    }
+  ]
+}
