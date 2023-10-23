@@ -1,0 +1,32 @@
+<div class="dropdown">
+  <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle aria-expanded="false">
+    CRUD Demo (requires JSON Server)
+  </button>
+  <ul class="dropdown-menu">
+    <li><a class="dropdown-item" (click)="onSelection('create')" role="button">Create User</a></li>
+    <li><a class="dropdown-item" (click)="onSelection('read')" role="button">Read User</a></li>
+    <li><a class="dropdown-item" (click)="onSelection('update')" role="button">Update User</a></li>
+    <li><a class="dropdown-item" (click)="onSelection('delete')" role="button">Delete User</a></li>
+    <li><a class="dropdown-item" (click)="onSelection('list')" role="button">List Users</a></li>
+  </ul>
+</div>
+
+<ng-container *ngIf="crudOperation" [ngSwitch]="crudOperation">
+
+  <ng-container *ngSwitchCase="'create'">
+    <app-create-user></app-create-user>
+  </ng-container>
+  <ng-container *ngSwitchCase="'read'">
+    <app-read-user></app-read-user>
+  </ng-container>
+  <ng-container *ngSwitchCase="'update'">
+    <app-update-user></app-update-user>  
+  </ng-container>
+  <ng-container *ngSwitchCase="'delete'">
+    <app-delete-user></app-delete-user>
+  </ng-container>
+  <ng-container *ngSwitchCase="'list'">
+    <app-list-users></app-list-users>
+  </ng-container>
+
+</ng-container>
