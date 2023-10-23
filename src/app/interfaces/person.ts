@@ -1,4 +1,5 @@
 export interface Person {
+  id?: number;
   givenName: string;
   surName: string;
   age: number;

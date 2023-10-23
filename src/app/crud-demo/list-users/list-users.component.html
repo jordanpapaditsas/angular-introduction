@@ -1,1 +1,38 @@
-<p>list-users works!</p>
+<table class="table">
+  <thead class="table-info">
+    <tr>
+      <th>
+        ID
+      </th>
+      <th>
+        First Name
+      </th>
+      <th>
+        Last Name
+      </th>
+      <th>
+        Age
+      </th>
+      <th>
+        Email
+      </th>
+      <th>
+        Address
+      </th>
+      <th>
+        Photo
+      </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let user of users">
+      <td> {{user.id}} </td>
+      <td> {{user.givenName}} </td>
+      <td> {{user.surName}} </td>
+      <td> {{user.age}} </td>
+      <td> {{user.email}} </td>
+      <td> {{user.address}} </td>
+      <td><img [src]="user.photoURL" alt="user photo" class="img-thumbnail" width="100" height="100"></td>
+    </tr>
+  </tbody>
+</table>

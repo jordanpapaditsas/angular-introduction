@@ -21,10 +21,10 @@ import { CrudDemoComponent } from './crud-demo/crud-demo/crud-demo.component';
   styleUrls: ['./app.component.css'],
 })
 export class AppComponent implements OnInit {
-
   title(title: any) {
     throw new Error('Method not implemented.');
   }
+
   name: string = 'Jordan';   // name = "Jordan" (same declaration)
   lastName = 'Papaditsas';
 
